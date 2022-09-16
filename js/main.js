@@ -1,4 +1,4 @@
-var answers = [
+const answers = [
   "It is certain",
   "It is decidedly so",
   "Without a doubt",
@@ -20,3 +20,40 @@ var answers = [
   "Cannot predict now",
   "Concentrate and ask again",
 ];
+
+
+function ClearFields() {
+  document.getElementById("return-answer-field").innerHTML = "";
+};
+
+
+
+document.getElementById("button-js").addEventListener("click", function () {
+    
+    const answer = answers[Math.floor(Math.random() * answers.length)];
+
+    document.getElementById('Magic-8-Ball-img').classList.toggle('shake');
+
+    setTimeout(() => {
+      document.getElementById("return-answer-field").innerHTML = answer
+    },1200)
+    console.log(answer)
+});
+
+document.getElementById("Magic-8-Ball-img").addEventListener("animationend", function() {
+  document.getElementById('Magic-8-Ball-img').classList.remove('shake');
+});
+
+// const answer = document.getElementById("return-answer-field");
+
+
+
+
+
+
+
+
+
+
+
+

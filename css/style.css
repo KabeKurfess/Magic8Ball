@@ -1,3 +1,64 @@
 body {
     
 }
+.Ball-With-Answers {
+    margin-top: 3rem;
+    height: 550px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.Magic-Ball {
+    position: relative;
+}
+.sent-back-answers{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2.5rem;
+    text-align: center;
+    font-size: 0.8rem;
+
+}
+.input-fields {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+.shake {
+    animation: shake 0.5s;
+  
+    animation-iteration-count: 2;
+  }
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+#text {
+    opacity: 0;
+    transition: 1s;
+}
+#text.fade-in {
+    opacity: 1;
+    transition: 1s;
+}
+#text.hide{
+    display: none;
+}
