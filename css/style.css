@@ -1,6 +1,4 @@
-body {
-    
-}
+
 .Ball-With-Answers {
     margin-top: 3rem;
     height: 550px;
@@ -51,7 +49,7 @@ body {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
-#text {
+/* #text {
     opacity: 0;
     transition: 1s;
 }
@@ -61,4 +59,4 @@ body {
 }
 #text.hide{
     display: none;
-}
+} */
